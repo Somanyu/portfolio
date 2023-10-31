@@ -37,7 +37,12 @@ const project = {
             title: 'Content',
             type: 'array',
             of: [{ type: 'block' }]
-        }
+        },
+        {
+            name: 'headline',
+            title: 'Headline',
+            type: 'string'
+        },
     ]
 }
 
