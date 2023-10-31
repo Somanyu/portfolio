@@ -14,7 +14,7 @@ export default function Navbar() {
                         work
                     </span>
                 </Link>
-                <Link href={'/tips'} className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle">
+                <Link href={'/tip'} className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle">
                     <span className="relative py-1 px-2">
                         tech tips
                     </span>
