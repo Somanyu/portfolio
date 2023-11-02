@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/components/theme-provider'
 import { ModeToggle } from '@/components/theme-toggle'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import Link from 'next/link'
@@ -36,6 +37,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
             </Link>
           </div>
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
