@@ -6,7 +6,7 @@ import { getProfile, getTips } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaBootstrap, FaDiscord, FaLaravel, FaLinkedinIn, FaLinux, FaPython, FaReact, FaStackOverflow } from 'react-icons/fa';
+import { FaBootstrap, FaDiscord, FaLaravel, FaLinkedinIn, FaDocker , FaPython, FaReact, FaStackOverflow } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { RxExternalLink } from 'react-icons/rx';
 import { SiChakraui, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
@@ -92,7 +92,7 @@ export default async function Home() {
             <SiChakraui className="h-5 w-5 text-cyan-500" />
           </Button>
           <Button className="dark:border-input border-neutral-500" variant="outline" size="icon">
-            <FaLinux className="h-5 w-5 text-yellow-300" />
+            <FaDocker className="h-5 w-5 text-[#0db7ed]" />
           </Button>
         </div>
       </div>
