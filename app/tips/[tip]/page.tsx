@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { getSingleTip } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
-import { ThumbsUp } from "lucide-react";
 import { Metadata, ResolvingMetadata } from 'next';
 import Image from "next/image";
 
@@ -35,7 +34,10 @@ export default async function Tip({ params }: Props) {
                         <h1 className="text-3xl font-semibold">{tip.title}</h1>
                         {/* <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"><ThumbsUp /></button> */}
                     </div>
-                    <div className="prose lg:prose-xl"><PortableText value={tip.content}/></div>
+                    {/* <div className="prose lg:prose-xl">
+                        <PortableText value={tip.content} />
+                    </div> */}
+                    <PortableText value={tip.content} />
                 </div>
             </div>
         </>
