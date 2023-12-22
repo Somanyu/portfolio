@@ -32,24 +32,23 @@ const tips = {
                 }
             ]
         },
-        // {
-        //     name: 'tags',
-        //     title: 'Tags',
-        //     type: 'array',
-        //     of: [{
-        //         type: 'object',
-        //         name: 'tag',
-        //         fields: [
-        //             { type: 'string', name: 'name', title: 'Name' },
-        //         ]
-        //     }]
-        // },
         {
             name: 'content',
             title: 'Content',
             type: 'array',
-            of: [{ type: 'block' }],
-            style: [{ title: 'Normal', value: 'normal' }, { title: 'Heading 1', value: 'h1' }, { title: 'Heading 2', value: 'h2' }, { title: 'Heading 3', value: 'h3' }, { title: 'Heading 4', value: 'h4' }],
+            of: [{
+                type: 'block',
+                styles: [
+                    { title: 'Normal', value: 'normal' },
+                    { title: 'H1', value: 'h1' },
+                    { title: 'H2', value: 'h2' },
+                    { title: 'H3', value: 'h3' },
+                    { title: 'H4', value: 'h4' },
+                    { title: 'H5', value: 'h5' },
+                    { title: 'H6', value: 'h6' },
+                    { title: 'Quote', value: 'blockquote' }
+                ]
+            }],
         }
     ],
 
