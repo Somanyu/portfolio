@@ -31,9 +31,9 @@ export default async function Tip({ params }: Props) {
                 <div className="md:w-1/2 w-4/5 m-auto my-28">
                     <Navbar />
                     <Image src={tip.image} alt={tip.title} width={1920} height={1080} className="mt-10 border-2 border-gray-700 object-cover rounded-xl" />
-                    {/* <div className="flex my-10 justify-between">
+                    <div className="flex my-10 justify-between">
                         <h1 className="text-3xl font-semibold">{tip.title}</h1>
-                    </div> */}
+                    </div>
                     <div className="mt-4 prose lg:prose-xl dark:prose-invert"><PortableText value={tip.content} /></div>
                 </div>
             </div>
