@@ -48,7 +48,8 @@ const tips = {
             name: 'content',
             title: 'Content',
             type: 'array',
-            of: [{ type: 'block' }]
+            of: [{ type: 'block' }],
+            style: [{ title: 'Normal', value: 'normal' }, { title: 'Heading 1', value: 'h1' }, { title: 'Heading 2', value: 'h2' }, { title: 'Heading 3', value: 'h3' }, { title: 'Heading 4', value: 'h4' }],
         }
     ],
 
