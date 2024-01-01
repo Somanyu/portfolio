@@ -32,7 +32,7 @@ export default async function Project({ params }: Props) {
                     <h1 className="text-3xl font-semibold">{project.name}</h1>
                     <a className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" href={project.url} target="blank" rel="noopener noreferrer">View project</a>
                 </div>
-                <div className="prose lg:prose-xl"><PortableText value={project.content} /></div>
+                <div className="prose lg:prose-xl dark:prose-invert"><PortableText value={project.content} /></div>
             </div>
         </div>
     )
